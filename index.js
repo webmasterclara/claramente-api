@@ -24,7 +24,7 @@ if (!STORE_HASH || !ACCESS_TOKEN) {
 }
 
 const BASE_URL = `https://api.bigcommerce.com/stores/${STORE_HASH}`;
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 /* ----------------------------- Core utilities ----------------------------- */
 
